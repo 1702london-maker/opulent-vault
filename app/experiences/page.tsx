@@ -21,9 +21,9 @@ export default function ExperiencesPage() {
           <div className="col-span-12 md:col-span-5 space-y-8">
             <span className="font-label-caps text-label-caps text-secondary">01 Gastronomy</span>
             <h2 className="font-serif text-headline-lg text-primary">Michelin-Star Excellence, Privately Hosted.</h2>
-            <p className="font-sans text-body-lg text-on-surface-variant">Access the inaccessible. From private tables in the world's most exclusive kitchens to personal dinners prepared by legendary Michelin-star chefs at your estate.</p>
+            <p className="font-sans text-body-lg text-on-surface-variant">Access the inaccessible. From private tables in the world&apos;s most exclusive kitchens to personal dinners prepared by legendary Michelin-star chefs at your estate.</p>
             <ul className="space-y-4 pt-4 border-t border-outline-variant/30">
-              {["Chef's Table Confidential", "Rare Vintage Tastings"].map((item) => (
+              {["chef&apos;s Table Confidential", "Rare Vintage Tastings"].map((item) => (
                 <li key={item} className="flex items-center gap-4">
                   <span className="material-symbols-outlined text-secondary">restaurant</span>
                   <span className="font-sans text-body-md">{item}</span>
@@ -44,7 +44,7 @@ export default function ExperiencesPage() {
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
           <div className="mb-20 text-center">
             <h2 className="font-serif text-headline-lg mb-4">Mediterranean Horizons</h2>
-            <p className="font-sans text-body-md text-on-surface-variant max-w-2xl mx-auto">Charter the world's most prestigious vessels. From the Amalfi Coast to the Balearics, our fleet is your private sanctuary on the water.</p>
+            <p className="font-sans text-body-md text-on-surface-variant max-w-2xl mx-auto">Charter the world&apos;s most prestigious vessels. From the Amalfi Coast to the Balearics, our fleet is your private sanctuary on the water.</p>
           </div>
           <div className="grid grid-cols-12 gap-gutter h-[600px]">
             <div className="col-span-12 md:col-span-8 relative overflow-hidden h-full">
@@ -77,7 +77,7 @@ export default function ExperiencesPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {[
             { label: "Private Aerial", title: "Alpine Ridge Helicopter Tour", desc: "Unprecedented access to the peaks of the Swiss Alps with private summit picnics.", src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBPGED_KDN-Oo086bokCIMNFV_sqI8OVsfduyMrlgYaNOBx0nSoUII1-iEvXhWDb59xgyAY1Uxi_-4e3ID_VXlclyvUZQHglwnj9OeWJeldI9cClUojVzf8zdVyL6I10fqsQe8LL7-V8a06hYoxZkK8nuMsCaIb-AAG81pmV8jmZPdb5Ch2ffcemOXJXBZkby7U7_86YHXuTQLadVf8UNiMsu5b--7pke_Xs-PaXS7_hPjmFzss_1wk-BclQv3rHhQuZb0aWvrFfk-L" },
-            { label: "Cultural Access", title: "After-Hours Louvre Curatorial", desc: "Explore the world's greatest art in absolute solitude with a leading historian.", src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCYGv_g5_8qdHK9mzHLthszDfR6tPouGLjuUfg-wB_-CiB7ylgnN9x3v_EuL19PQyALY8jRxsY7IQl2hXoZ_o20mOiAGxbLBYt3-bJ5NmpsqsGrtkGroAUJGvIxQiB6UggVBcx-Q6-hIvEoDm3jGG5c7DTPbfr78badzUDy1pk4-rAK0FMSiZE-3uRaODx98y1P9p7fYi9icKiqKK_qKsadTnTEBBMofryu6zo9D29AD69lcOacweqBfBGFIlkm-iFKRt8PDRaF5ty_" },
+            { label: "Cultural Access", title: "After-Hours Louvre Curatorial", desc: "Explore the world&apos;s greatest art in absolute solitude with a leading historian.", src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCYGv_g5_8qdHK9mzHLthszDfR6tPouGLjuUfg-wB_-CiB7ylgnN9x3v_EuL19PQyALY8jRxsY7IQl2hXoZ_o20mOiAGxbLBYt3-bJ5NmpsqsGrtkGroAUJGvIxQiB6UggVBcx-Q6-hIvEoDm3jGG5c7DTPbfr78badzUDy1pk4-rAK0FMSiZE-3uRaODx98y1P9p7fYi9icKiqKK_qKsadTnTEBBMofryu6zo9D29AD69lcOacweqBfBGFIlkm-iFKRt8PDRaF5ty_" },
             { label: "Nature Reclaimed", title: "Atacama Stargazing Expedition", desc: "A journey to the edge of the world with astrophysicists in a luxury desert outpost.", src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBozPnwSDfKfuYt14CwFP3UKmHD1oCOrslhtmC0rYHNB4rDj-PPJomq4MsHcCDAZo-zr5k9nbdvt-8OM1KfUTBuOXibdOeVGdKtJyRmTLDVYejInAWIvctJk_GQJl21Lh197qGAXW_9GNQXZtLIAv9C15BKxWXf3Y_zGAP4648AveFiCMYcidXTbEPFXfvdooYrq4lESf90Fbp49FnZi-6Sz9wtm0QG-F9GXAhcxnHgiDSNC3S-fTY1DmcbVOLdu2PJ8ycmJJMZ8UG_" },
           ].map((tour) => (
             <div key={tour.title} className="group cursor-pointer">
@@ -103,7 +103,7 @@ export default function ExperiencesPage() {
           <div className="max-w-xl glass-panel p-12 md:p-20 border border-white/20">
             <span className="font-label-caps text-label-caps text-primary/60 mb-6 block">04 Restoration</span>
             <h2 className="font-serif text-headline-lg text-primary mb-8 italic">The Art of Stillness.</h2>
-            <p className="font-sans text-body-lg text-on-surface-variant mb-12">Bespoke wellness retreats in the world's most tranquil locations. Tailored bio-hacking, traditional therapies, and absolute privacy.</p>
+            <p className="font-sans text-body-lg text-on-surface-variant mb-12">Bespoke wellness retreats in the world&apos;s most tranquil locations. Tailored bio-hacking, traditional therapies, and absolute privacy.</p>
             <button className="bg-primary text-on-primary px-10 py-5 font-label-caps text-label-caps hover:bg-secondary transition-all w-full md:w-auto">Explore Retreats</button>
           </div>
         </div>

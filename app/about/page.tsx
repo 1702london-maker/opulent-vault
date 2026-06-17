@@ -22,7 +22,7 @@ export default function AboutPage() {
             <div className="col-span-12 md:col-span-5">
               <span className="font-label-caps text-label-caps text-secondary mb-4 block">Our Heritage</span>
               <h2 className="font-serif text-headline-lg mb-8">A Legacy Built on Bespoke Service.</h2>
-              <p className="font-sans text-body-lg text-on-surface-variant mb-6">Opulent Vault was founded with a singular conviction: that the world's most discerning individuals deserve access to experiences of uncompromising quality — delivered with the discretion, speed, and precision that defines true luxury service.</p>
+              <p className="font-sans text-body-lg text-on-surface-variant mb-6">Opulent Vault was founded with a singular conviction: that the world&apos;s most discerning individuals deserve access to experiences of uncompromising quality — delivered with the discretion, speed, and precision that defines true luxury service.</p>
               <p className="font-sans text-body-md text-on-surface-variant">From our origins curating private residences in London to now operating across the United Kingdom and 24 European cities, we have built a network of properties, services, and connections that place the extraordinary within reach for those who will accept nothing less.</p>
             </div>
             <div className="col-span-12 md:col-span-6 md:col-start-7">

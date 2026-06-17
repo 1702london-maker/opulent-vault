@@ -2,7 +2,6 @@
 import { createServerClient } from "@/lib/supabase";
 import StaysFilter from "@/components/StaysFilter";
 import AIConciergeSection from "@/components/AIConciergeSection";
-import Link from "next/link";
 
 const FALLBACK_PROPERTIES = [
   { id: "1", title: "The Mayfair Penthouse", city: "London", price_from: 4200, guests: 8, bedrooms: 4, image_url: "https://lh3.googleusercontent.com/aida-public/AB6AXuCTwJz6XdlVeWAnLPUNz-JWkyq04b9fdc6endsGyMSD7jF4NSmVsjTf4aCgnnm1KezqFFOE6e6-8dYli-wXtXb39_otZh8Qgnlb3xBSZ67oyfckfR3Jkw3hIF3G1YNuqYBDku095aXgfKsKDwYA2_QH5bqzt4YiBIaOgk7zSiYkfatGIcWpABgxMUaT5DZ4KJdyh7eYsHY4eNUzRSWtbD-bpO3S-4psNRtjXieB5CUlqCvGaK3OzmkNHKj6VoSiDccmyr7vivV0fNuG" },
@@ -48,7 +47,7 @@ export default async function StaysPage({ searchParams }: { searchParams: { type
           <StaysFilter />
         </Suspense>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-          {properties.map((p: any) => (
+          {properties.map((p: { id: string; title: string; city: string; price_from: number; guests: number; bedrooms: number; image_url?: string; hero_image_path?: string }) => (
             <div key={p.id} className="group cursor-pointer">
               <div className="overflow-hidden mb-6 aspect-[4/5] relative">
                 <img

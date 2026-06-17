@@ -13,7 +13,7 @@ export default function SecurityPage() {
           <div className="max-w-2xl space-y-6">
             <span className="font-label-caps text-label-caps text-secondary-fixed tracking-[0.3em] uppercase block">Elite Security Division</span>
             <h1 className="font-serif text-headline-lg text-white leading-tight">Uncompromising Safety,<br />Absolute Discretion.</h1>
-            <p className="font-sans text-body-lg text-surface-variant/80 max-w-lg">Bespoke protection strategies for the world's most discerning individuals. Our elite teams operate with surgical precision and invisible presence.</p>
+            <p className="font-sans text-body-lg text-surface-variant/80 max-w-lg">Bespoke protection strategies for the world&apos;s most discerning individuals. Our elite teams operate with surgical precision and invisible presence.</p>
             <div className="pt-8 flex gap-4">
               <a className="bg-white text-primary px-10 py-5 font-label-caps text-label-caps uppercase tracking-widest hover:bg-secondary-fixed transition-all" href="#request">Consult a Strategist</a>
               <a className="border border-white/30 text-white px-10 py-5 font-label-caps text-label-caps uppercase tracking-widest hover:bg-white/10 transition-all" href="#services">View Capabilities</a>

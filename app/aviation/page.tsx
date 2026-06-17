@@ -13,7 +13,7 @@ export default function AviationPage() {
           <div className="max-w-3xl">
             <span className="font-label-caps text-label-caps text-secondary mb-4 block tracking-[0.3em]">Opulent Vault Aviation</span>
             <h1 className="font-serif text-display-xl text-white mb-8 leading-[1.1]">Redefining the Skies.</h1>
-            <p className="font-sans text-body-lg text-white/80 mb-12 max-w-xl">Bespoke aviation solutions tailored to the world's most discerning travelers. From transcontinental private jets to precision helicopter transfers.</p>
+            <p className="font-sans text-body-lg text-white/80 mb-12 max-w-xl">Bespoke aviation solutions tailored to the world&apos;s most discerning travelers. From transcontinental private jets to precision helicopter transfers.</p>
             <div className="flex gap-6">
               <button className="bg-on-primary text-primary px-8 py-4 font-label-caps text-label-caps">Explore Fleet</button>
               <button className="border border-white/30 text-white px-8 py-4 font-label-caps text-label-caps hover:bg-white/10 transition-colors">Request Charter</button>

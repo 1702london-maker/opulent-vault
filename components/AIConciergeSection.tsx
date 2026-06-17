@@ -1,3 +1,5 @@
+"use client";
+
 export default function AIConciergeSection() {
   return (
     <section className="bg-primary text-on-primary py-section-gap px-margin-mobile md:px-margin-desktop">

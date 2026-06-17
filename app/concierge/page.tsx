@@ -1,7 +1,7 @@
 ﻿import AIConciergeSection from "@/components/AIConciergeSection";
 
 const CARD_SERVICES = [
-  { icon: "celebration", title: "Event Planning", desc: "From intimate dinners to grand celebrations — managed to perfection with access to the world's most exclusive venues." },
+  { icon: "celebration", title: "Event Planning", desc: "From intimate dinners to grand celebrations — managed to perfection with access to the world&apos;s most exclusive venues." },
   { icon: "sailing", title: "Yacht Charter", desc: "Mediterranean and Caribbean yacht charters sourced from our vetted fleet of superyachts, with crew and itinerary arranged." },
   { icon: "star_rate", title: "VIP Reservations", desc: "Priority access to Michelin-starred restaurants, sold-out shows, members clubs, and cultural events worldwide." },
   { icon: "workspace_premium", title: "Luxury Requests", desc: "Have an extraordinary request? Our team specialises in sourcing the impossible — from rare collectibles to once-in-a-lifetime experiences." },
