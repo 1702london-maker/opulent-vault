@@ -87,25 +87,26 @@ export default function Footer() {
 
           {/* 4-column link grid — all columns start at same level */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
-            {/* Col 1 */}
+            {/* Col 1: brand + socials */}
             <div>
-              <p className="font-label-caps text-label-caps text-secondary uppercase mb-5 tracking-widest">Company</p>
-              <ul className="space-y-3">
-                {[
-                  { label: "About", href: "/about" },
-                  { label: "Our Story", href: "/about#story" },
-                  { label: "Luxury Standards", href: "/about#standards" },
-                  { label: "Careers", href: "/about#careers" },
-                  { label: "Press", href: "/about#press" },
-                  { label: "Contact", href: "/contact" },
-                ].map((l) => (
-                  <li key={l.label}>
-                    <Link href={l.href} className="font-sans text-sm text-on-surface-variant hover:text-primary transition-colors">
-                      {l.label}
-                    </Link>
-                  </li>
+              <p className="font-label-caps text-label-caps text-secondary uppercase mb-5 tracking-widest">Opulent Vault</p>
+              <p className="font-sans text-sm text-on-surface-variant leading-relaxed mb-6">
+                Excellence in luxury living across the UK and Europe.
+              </p>
+              <div className="flex gap-3">
+                {["instagram", "facebook", "linkedin", "tiktok", "youtube"].map((s) => (
+                  <a
+                    key={s}
+                    href={`https://${s}.com`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-9 h-9 border border-outline-variant flex items-center justify-center hover:border-secondary transition-colors shrink-0"
+                    aria-label={s}
+                  >
+                    <span className="material-symbols-outlined text-sm text-on-surface-variant">link</span>
+                  </a>
                 ))}
-              </ul>
+              </div>
             </div>
 
             {/* Col 2 */}
@@ -176,20 +177,6 @@ export default function Footer() {
                   </button>
                 </form>
               )}
-              <div className="flex gap-3 flex-wrap">
-                {["instagram", "facebook", "linkedin", "tiktok", "youtube"].map((s) => (
-                  <a
-                    key={s}
-                    href={`https://${s}.com`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-9 h-9 border border-outline-variant flex items-center justify-center hover:border-secondary transition-colors"
-                    aria-label={s}
-                  >
-                    <span className="material-symbols-outlined text-sm text-on-surface-variant">link</span>
-                  </a>
-                ))}
-              </div>
             </div>
           </div>
 
