@@ -363,13 +363,13 @@ export default function Header() {
     >
       <div ref={dropdownRef} className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex items-center justify-between py-5">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 shrink-0">
-          <div className="w-8 h-8 bg-primary flex items-center justify-center">
-            <span className="text-on-primary font-serif text-xs font-bold tracking-widest">OPV</span>
-          </div>
-          <span className="font-serif text-xl font-semibold tracking-tight text-primary">
-            Opulent Vault
-          </span>
+        <Link href="/" className="flex items-center shrink-0">
+          <img
+            src="/logo-opulent-vault.jpeg"
+            alt="Opulent Vault"
+            className="h-14 w-auto"
+            style={{ mixBlendMode: "multiply" }}
+          />
         </Link>
 
         {/* Desktop Nav */}

@@ -74,11 +74,13 @@ export default function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
             {/* Col 1 */}
             <div>
-              <div className="flex items-center gap-2 mb-6">
-                <div className="w-7 h-7 bg-primary flex items-center justify-center">
-                  <span className="text-on-primary font-serif text-[10px] font-bold tracking-widest">OPV</span>
-                </div>
-                <span className="font-serif text-lg font-semibold text-primary">Opulent Vault</span>
+              <div className="mb-6">
+                <img
+                  src="/logo-opulent-vault.jpeg"
+                  alt="Opulent Vault"
+                  className="h-20 w-auto"
+                  style={{ mixBlendMode: "multiply" }}
+                />
               </div>
               <p className="font-sans text-sm text-on-surface-variant mb-6 leading-relaxed">
                 A curated luxury lifestyle ecosystem delivering world-class properties, private aviation,
