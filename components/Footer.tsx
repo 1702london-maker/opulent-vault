@@ -68,24 +68,29 @@ export default function Footer() {
         </div>
       </section>
 
-      {/* Main footer — white background matching Stitch design */}
-      <footer className="w-full bg-white border-t border-outline-variant/20 pt-24">
+      {/* Main footer */}
+      <footer className="w-full bg-white border-t border-outline-variant/20 pt-16 pb-0">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
+
+          {/* Top: logo + description spanning full width, then divider */}
+          <div className="flex items-center gap-6 mb-10 pb-10 border-b border-outline-variant/20">
+            <img
+              src="/logo-opulent-vault.png"
+              alt="Opulent Vault"
+              className="h-16 w-auto shrink-0"
+            />
+            <p className="font-sans text-sm text-on-surface-variant leading-relaxed max-w-lg">
+              A curated luxury lifestyle ecosystem delivering world-class properties, private aviation,
+              chauffeur services, and bespoke concierge across the UK and Europe.
+            </p>
+          </div>
+
+          {/* 4-column link grid — all columns start at same level */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14">
             {/* Col 1 */}
             <div>
-              <div className="mb-6">
-                <img
-                  src="/logo-opulent-vault.png"
-                  alt="Opulent Vault"
-                  className="h-20 w-auto"
-                />
-              </div>
-              <p className="font-sans text-sm text-on-surface-variant mb-6 leading-relaxed">
-                A curated luxury lifestyle ecosystem delivering world-class properties, private aviation,
-                chauffeur services, and bespoke concierge across the UK and Europe.
-              </p>
-              <ul className="space-y-2">
+              <p className="font-label-caps text-label-caps text-secondary uppercase mb-5 tracking-widest">Company</p>
+              <ul className="space-y-3">
                 {[
                   { label: "About", href: "/about" },
                   { label: "Our Story", href: "/about#story" },
@@ -105,8 +110,8 @@ export default function Footer() {
 
             {/* Col 2 */}
             <div>
-              <p className="font-label-caps text-label-caps text-secondary uppercase mb-6">Explore</p>
-              <ul className="space-y-2">
+              <p className="font-label-caps text-label-caps text-secondary uppercase mb-5 tracking-widest">Explore</p>
+              <ul className="space-y-3">
                 {[
                   { label: "Stays", href: "/stays" },
                   { label: "Destinations", href: "/destinations" },
@@ -127,8 +132,8 @@ export default function Footer() {
 
             {/* Col 3 */}
             <div>
-              <p className="font-label-caps text-label-caps text-secondary uppercase mb-6">Partners & Affiliates</p>
-              <ul className="space-y-2">
+              <p className="font-label-caps text-label-caps text-secondary uppercase mb-5 tracking-widest">Partners & Affiliates</p>
+              <ul className="space-y-3">
                 {[
                   { label: "Become A Partner", href: "/partners#apply" },
                   { label: "Property Partners", href: "/partners#property" },
@@ -150,9 +155,9 @@ export default function Footer() {
 
             {/* Col 4 */}
             <div>
-              <p className="font-label-caps text-label-caps text-secondary uppercase mb-6">Join The OPV Circle</p>
+              <p className="font-label-caps text-label-caps text-secondary uppercase mb-5 tracking-widest">Join The OPV Circle</p>
               {subscribed ? (
-                <p className="font-sans text-sm text-on-surface-variant">You&apos;re subscribed. Thank you.</p>
+                <p className="font-sans text-sm text-on-surface-variant mb-8">You&apos;re subscribed. Thank you.</p>
               ) : (
                 <form onSubmit={handleSubscribe} className="mb-8">
                   <input
@@ -160,18 +165,18 @@ export default function Footer() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Email address"
-                    className="w-full bg-transparent border-b border-outline-variant pb-3 mb-3 font-sans text-sm text-primary placeholder:text-on-surface-variant/60 focus:outline-none focus:border-primary transition-colors"
+                    className="w-full bg-transparent border-b border-outline-variant pb-3 mb-4 font-sans text-sm text-primary placeholder:text-on-surface-variant/60 focus:outline-none focus:border-primary transition-colors"
                   />
                   <button
                     type="submit"
                     disabled={loading}
-                    className="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors uppercase"
+                    className="font-label-caps text-label-caps text-secondary hover:text-primary transition-colors uppercase tracking-widest disabled:opacity-50"
                   >
-                    Subscribe →
+                    {loading ? "..." : "Subscribe →"}
                   </button>
                 </form>
               )}
-              <div className="flex gap-4">
+              <div className="flex gap-3 flex-wrap">
                 {["instagram", "facebook", "linkedin", "tiktok", "youtube"].map((s) => (
                   <a
                     key={s}
@@ -189,11 +194,11 @@ export default function Footer() {
           </div>
 
           {/* Legal bar */}
-          <div className="border-t border-outline-variant/20 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="border-t border-outline-variant/20 py-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <p className="font-sans text-xs text-on-surface-variant/60">
               © Opulent Vault. All Rights Reserved.
             </p>
-            <div className="flex flex-wrap gap-6">
+            <div className="flex flex-wrap gap-x-6 gap-y-2">
               {[
                 { label: "Privacy Policy", href: "/privacy" },
                 { label: "Terms and Conditions", href: "/terms" },
@@ -207,6 +212,7 @@ export default function Footer() {
               ))}
             </div>
           </div>
+
         </div>
       </footer>
     </>
