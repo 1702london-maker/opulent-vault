@@ -365,10 +365,9 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0">
           <img
-            src="/logo-opulent-vault.jpeg"
+            src="/logo-opulent-vault.png"
             alt="Opulent Vault"
             className="h-14 w-auto"
-            style={{ mixBlendMode: "multiply" }}
           />
         </Link>
 

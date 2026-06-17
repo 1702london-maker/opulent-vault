@@ -76,10 +76,9 @@ export default function Footer() {
             <div>
               <div className="mb-6">
                 <img
-                  src="/logo-opulent-vault.jpeg"
+                  src="/logo-opulent-vault.png"
                   alt="Opulent Vault"
                   className="h-20 w-auto"
-                  style={{ mixBlendMode: "multiply" }}
                 />
               </div>
               <p className="font-sans text-sm text-on-surface-variant mb-6 leading-relaxed">
