@@ -367,7 +367,7 @@ export default function Header() {
           <img
             src="/logo-opulent-vault.png"
             alt="Opulent Vault"
-            className="h-14 w-auto"
+            className="h-24 w-auto"
           />
         </Link>
 
